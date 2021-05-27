@@ -1,0 +1,40 @@
+First step is you wan't open up crosh, to do that you to simotaniously push " ctrl-alt-t "
+
+when you have crosh upen you need to type in " shell "
+
+you should get something that look's like this " chronos@localhost / $  "
+
+if you get this text you are doing it correctly and need to type in " sudo su " 
+
+you will get a new line that looks like this " localhost / #  "
+
+next you will need to type in " cd home/root "
+
+then you will get this as the result " localhost /home/root #  "
+
+next you just need to type in " ls "
+
+you will get this as a result
+" 68ab9103c4f69a6a0eeeae8f12eb255c5f03d9e8  81dd595c869acf2263c447e6454fa7d1e4985f8f  e59235505729fbfa92ad0ca19982034c777df93a "
+
+you want to highlight the center section of jiberish that is highlited in blue in your crosh window.
+(highliting copys the text)
+
+in your new command line you want to type in " cd " hit the space bar then input the text that you just highlited and hit ENTER
+
+then type in " ls "
+
+then type in " more shill/shill.profile "
+
+then your going to get a whole lot of words on your screen, you want to hold down enter until you see a new commant line
+
+when you do that you need to look for the wifi you want the password for
+
+once you have that find where it says " Passphrase=rot47 (randomtext)"
+
+what you see to the right of it is the randomtext and that is what you need.
+it's not going to say random text on your screen, it will probably look something like this " :8C2?5A@E2E@_eg " this is mine
+
+what you want to do in the final commant line is this " echo randomtext | tr '!-~' 'P-~!-O'
+
+hit enter and you will get the password for that WiFi
